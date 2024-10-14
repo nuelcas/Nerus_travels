@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ne-rux Travels</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+      <nav id="nav-bar">
+        <a href="index.html">
+        <img
+          src="images/neruslogo.PNG"
+          style="margin-left: 10px"
+          width="250px"
+          height="65px"
+          alt="logo"
+        /></a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li id="booking"><a href="https://forms.gle/VkikbrXqeqKxjimJ7">Booking</a></li>
+          <li><a href="#services">Ride</a></li>
+          <li><a href="#rides">Cars</a></li>
+        </ul>
+      </nav>
+      
+      <header>
+        <div class="slideshow-container">
+          <div class="slide fade">
+            <img src="images/nerusfront.JPG" alt="Slide 1" />
+          </div>
+          <div class="slide fade">
+            <img src="images/car-rentalsign.jpg" alt="Slide 2" />
+          </div>
+          <div class="slide fade">
+            <img src="images/car-rentalenjoy.png" alt="Slide 3" />
+          </div>
+        </div>
+      </header>
+      
+      <div id="services" class="services">
+        <h1 class="color">Ride Services</h1>
+        <div class="container">
+          <div>
+            <h3>Pick Up and Drop Off</h3>
+            <img
+              src="images/neruspickup.JPG"
+              width="350"
+              height="250"
+              alt="Hotel pick up and drop off"
+            />
+            <p>
+              Effortless journeys begin at your doorstep with our hassle-free hotel pick-up and drop-off.
+            </p>
+            <button class="booking" type="button"><a href="https://forms.gle/VkikbrXqeqKxjimJ7">Book Now</a></button>
+          </div>
+  
+          <div>
+            <h3>Airport Transfer</h3>
+            <img
+              src="images/airport.jpg"
+              width="350"
+              height="250"
+              alt="Airport transfer"
+            />
+            <p>
+              Seamless journeys begin with our swift airport transfer, 
+              ensuring comfort and convenience on every ride.
+            </p>
+            <button class="booking" type="button"><a href="https://forms.gle/VkikbrXqeqKxjimJ7">Book Now</a></button>
+          </div>
+          <div>
+            <h3>Short and Long Term Rental</h3>
+            <img
+              src="images/nerusrentals.JPG"
+              width="350"
+              height="250"
+              alt="Short and Long Term Rental"
+            />
+            <p>
+              Revolutionize your journey with flexible, 
+              affordable short and long term Car rentals. 
+            </p>
+            <button class="booking" type="button"><a href="https://forms.gle/VkikbrXqeqKxjimJ7">Book Now</a></button>
+          </div>
+        </div>
+      </div>
+      <div id="about">
+        <div>
+          <p class="about-us">
+            Unlock your adventures with our seamless car rental service, 
+            offering convenience, reliability, and the freedom 
+            to explore without limits.
+          </p>
+        </div>
+        <div>
+          <video width="600" height=350" controls>
+            <source src="video/nerusvid.MP4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      <div id="rides" class="rides">
+        <h1 class="color">Vehicle Fleet</h1>
+        <div class="car-slide">
+          <div class="slider-image">
+            <img src="images/sedan.jpg" width="250"
+            height="200" alt="Image 1" />
+            <h3>Sedan</h3>
+            <p>For business trip or road trip with enough seats and boot space.</p>
+          </div>
+          <div class="slider-image">
+            <img src="images/suv.jpg" width="250"
+            height="200" alt="Image 2" />
+            <h3>SUV</h3>
+            <p>Perfect when travelling with family.</p>
+          </div>
+          <div class="slider-image">
+            <img src="images/minivan.jpg" width="250"
+            height="200" alt="Image 3" />
+            <h3>Minivan</h3>
+            <p>Large and spacious. Perfect for family holidays or getaways.</p>
+          </div>
+          <div class="slider-image">
+            <img src="images/hilux.jpg" width="250"
+            height="200" alt="Image 4" />
+            <h3>Pickup</h3>
+            <p>Perfect when you have much loads to carry and for field supervision.</p>
+          </div>
+          <div class="slider-image">
+            <img src="images/coaster.jpg" width="250"
+            height="200" alt="Image 5" />
+            <h2>Coaster</h2>
+            <p>Perfect for accommodating a large number of people.</p>
+          </div>
+        </div>
+    </div>
+    <div id="faq">
+      <h1 class="color">FAQs</h1>
+      <div class="faq">
+        <div class="question" onclick="toggleAnswer('answer1')">Q: What are your rental rates?</div>
+        <div class="answer" id="answer1">A: Rental rates vary depending on the type of car, duration of rental, and any additional services you opt for.</div>
+    </div>
+    
+    <div class="faq">
+        <div class="question" onclick="toggleAnswer('answer2')">Q: What is your cancellation policy?</div>
+        <div class="answer" id="answer2">A: We have a flexible cancellation policy that varies depending on the type of reservation. Please contact our staff for cancellation.</div>
+    </div>
+    
+    <div class="faq">
+        <div class="question" onclick="toggleAnswer('answer3')">Q: How can I extend my rental period?</div>
+        <div class="answer" id="answer3">A: You can extend your rental period by contacting our customer service team. Additional charges may apply.</div>
+    </div>
+    
+    <div class="faq">
+        <div class="question" onclick="toggleAnswer('answer4')">Q: What documents do I need to rent a car?</div>
+        <div class="answer" id="answer4">A: A form of identification such as a passport or ID card.</div>
+    </div>
+    
+    <div class="faq">
+        <div class="question" onclick="toggleAnswer('answer5')">Q: Can I rent a car for someone else?</div>
+        <div class="answer" id="answer5">A: Yes, you can rent a car for someone else, provided the required documents are presented.</div>
+    </div>
+    <div class="faq">
+      <div class="question" onclick="toggleAnswer('answer6')">Q: Do you offer self drive services?</div>
+      <div class="answer" id="answer6">A: Presently, we do not offer self drive services.</div>
+   </div>
+    
+    <div class="faq">
+        <div class="question" onclick="toggleAnswer('answer7')">Q: What happens if the car breaks down during my rental period?</div>
+        <div class="answer" id="answer7">A: In the event of a breakdown, our drivers are well enhanced to handle such issues.</div>
+    </div>
+    
+    <div class="faq">
+        <div class="question" onclick="toggleAnswer('answer8')">Q: What is your fuel policy?</div>
+        <div class="answer" id="answer8">A: Our fuel policy depends on the type of rental agreement. You can opt in for self fueling.</div>
+    </div>
+    
+    <div class="faq">
+        <div class="question" onclick="toggleAnswer('answer9')">Q: Can I take the rental car out of the country?</div>
+        <div class="answer" id="answer9">A: Our rental cars are permitted for travel within Nigeria.</div>
+    </div>
+    
+    <div class="faq">
+        <div class="question" onclick="toggleAnswer('answer10')">Q: Are there any age restrictions for renting a car?</div>
+        <div class="answer" id="answer10">A: Yes, you must be at least 21 years old to rent a car from us. Additional age-related restrictions may apply for specific car categories.</div>
+    </div>
+    
+    <div class="faq">
+        <div class="question" onclick="toggleAnswer('answer11')">Q: What payment methods do you accept?</div>
+        <div class="answer" id="answer11">A: We accept bank deposits and cash. Please do not pay online. Contact our staff for account details.</div>
+    </div>
+    
+    <div class="faq">
+        <div class="question" onclick="toggleAnswer('answer12')">Q: Can I make changes to my reservation?</div>
+        <div class="answer" id="answer12">A: Yes, you can make changes to your reservation depending on availability and any applicable terms and conditions. Please contact our customer service team for assistance.</div>
+    </div>
+    
+    </div>
+    <div id="contact-info">
+      <div class="enquiry">
+        <img src="images/neruslogo.PNG" width="200" height="200" />
+        <p>For Reservations & Enquiries: +2348136969552</p>
+      </div>
+      <div class="socials">
+        <ul>
+          <li>
+            <a href="https://wa.me/message/BBL6KGI2OHE5G1" target="_blank"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+          </li>
+
+          <li>
+            <a href="https://www.twitter.com/nuelcascleaners" target="_blank"
+              ><i class="fab fa-twitter-square"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/Nuelcascleaners/"
+              target="_blank"
+              ><i class="fab fa-facebook-square"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/nuelcascleaners"
+              target="_blank"
+              ><i class="fab fa-instagram-square"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <footer>
+      <div>
+        <p><a href="terms.html">Terms & Conditions</a></p>
+      </div>
+      <div>
+        <p>Copyright &copy; Ne-rux</p>
+      </div>
+      <div>
+        <p><a href="policy.html">Privacy Policy</a></p>
+      </div>
+    </footer>
+      <script src="nerux.js"></script>
+  </body>
+</html>

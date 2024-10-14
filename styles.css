@@ -1,0 +1,297 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  background: linear-gradient(to right, black, #212121);
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+nav ul {
+  list-style-type: none;
+  margin-top: -40px;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: goldenrod;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+nav ul li a:hover {
+  cursor: pointer;
+  color: yellow;
+}
+
+.slideshow-container {
+  max-width: 100%;
+
+  margin: auto;
+}
+
+.slide {
+  margin-top: 45px;
+}
+
+.slide img {
+  width: 100%;
+  height: 580px;
+}
+
+.color {
+  text-align: center;
+  background-color: whitesmoke;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: rgb(251, 195, 54);
+}
+
+.container > div {
+  flex-basis: calc(33.33% - 20px);
+  margin-bottom: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.container h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.container img {
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+
+.container p {
+  font-size: 16px;
+}
+
+.booking {
+  height: 35px;
+  width: 85px;
+  background: linear-gradient(to bottom, #32cd32, #008000);
+  border: none;
+  border-radius: 10%;
+}
+
+button a {
+  color: goldenrod;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.booking:hover {
+  cursor: pointer;
+  background: rgb(2, 159, 2);
+}
+
+#about {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+
+#about div {
+  margin: 10px;
+}
+
+.about-us {
+  font-size: 50px;
+  color: whitesmoke;
+}
+
+.car-slide {
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  margin: 5px;
+}
+
+.car-slide img {
+  margin-top: 10px;
+}
+
+.car-slide h3 {
+  padding-left: 5px;
+}
+
+.car-slide p {
+  padding-left: 5px;
+}
+
+.faq {
+  background-color: azure;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 2px 50px 0 50px;
+  padding: 10px;
+  font-size: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.question {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.answer {
+  display: none;
+  padding: 10px 0;
+}
+
+#contact-info {
+  background: linear-gradient(to right, #1f1ff5, #0000ff);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.enquiry {
+  display: flex;
+  align-items: center;
+}
+
+.enquiry img {
+  margin-left: 20px;
+}
+
+.enquiry p {
+  margin-left: 110px;
+  font-size: 25px;
+  color: white;
+}
+
+.socials ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+}
+
+.socials ul li {
+  margin-right: 60px;
+}
+
+.socials ul li a {
+  color: white;
+  font-size: 35px;
+}
+
+footer {
+  background: linear-gradient(to right, #808080, #a9a9a9);
+  width: 100%;
+  height: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+footer p {
+  margin: 5px;
+  font-size: 18px;
+}
+
+footer p a {
+  text-decoration: none;
+  color: black;
+}
+
+@media only screen and (max-width: 1300px) {
+  .car-slide {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 2fr));
+  }
+
+  video {
+    width: 400px;
+    height: 500px;
+  }
+}
+
+@media only screen and (max-width: 830px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+
+  #about {
+    flex-direction: column;
+  }
+
+  video {
+    width: 550px;
+    height: 350px;
+  }
+
+  .car-slide {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 2fr));
+  }
+
+  #contact-info {
+    flex-direction: column;
+  }
+
+  .enquiry {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .enquiry img {
+    margin: 10px 0;
+  }
+
+  .enquiry p {
+    margin: 10px 0;
+  }
+
+  .socials ul {
+    justify-content: center;
+  }
+
+  footer {
+    flex-direction: row;
+    width: auto;
+    margin: 5px;
+  }
+
+  .faq {
+    margin: 5px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  video {
+    width: 300px;
+    height: 200px;
+  }
+}
